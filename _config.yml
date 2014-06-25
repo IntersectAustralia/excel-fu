@@ -2,7 +2,7 @@
 title: Intersect Excel Fu
 email: training@intersect.org.au
 description: "Excel Fu: An Excel course for Researchers"
-baseurl: "/excel-fu/"
+baseurl: "/excel-fu"
 url: "http://www.intersect.org.au"
 
 # Build settings
