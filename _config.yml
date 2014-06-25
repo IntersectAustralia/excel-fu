@@ -1,0 +1,10 @@
+# Site settings
+title: Intersect Excel Fu
+email: training@intersect.org.au
+description: "Excel Fu: An Excel course for Researchers"
+baseurl: ""
+url: "http://www.intersect.org.au"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
