@@ -421,3 +421,51 @@ a:visited { color: #205caa; }
   padding: 10px;
   border-left: solid 2px red;
 }
+
+.objective {
+  padding: 10px;
+  padding-left: 40px;
+  border-left: solid 2px orange;
+  color: orange;
+  font-weight: bold;
+  font-size: 14pt;
+  background-image: url('../icons/objective.png');
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+
+.note {
+  padding: 10px;
+  padding-left: 40px;
+  border-left: solid 2px orange;
+  background-image: url('../icons/note.png');
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+
+
+
+
+.inset {
+  border: solid 2px #aaaaaa;
+  background-color: #eeeeee;
+  padding: 10px 10px 10px 10px;
+}
+
+.inset .title {
+  font-weight: bold;
+  font-size: 14pt;
+  color: orange;
+  padding-bottom: 20px;
+}
+
+.post-content h1 {
+ color: orange;
+ font-size: 36px;
+ font-weight: bold;
+}
+
+.post-content h3 {
+ color: orange;
+}
+
