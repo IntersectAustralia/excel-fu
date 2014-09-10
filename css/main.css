@@ -89,12 +89,12 @@ a:visited { color: #205caa; }
 
 .site-footer .column { float: left; margin-bottom: 15px; }
 
-.footer-col-1 {
+.footer-col-2 {
   width: 500px; /*fallback*/
   width: -webkit-calc(65% - 10px);
   width: -moz-calc(65% - 10px);
   width: -o-calc(65% - 10px);
-  width: calc(65% - 10px);
+  width: calc(10px);
   margin-right: 10px
 }
 .footer-col-1 {
@@ -439,7 +439,7 @@ a:visited { color: #205caa; }
   background-position: 10px 10px;
 }
 
-.
+
 .note {
   padding: 10px;
   padding-left: 40px;
