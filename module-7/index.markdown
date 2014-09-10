@@ -125,3 +125,7 @@ You should arrive at a plot similar to this one:
 ![Final plot](12.png)
 
 What does this tell us about the relationship between temperature and day length in Sydney?
+
+
+
+<a class="next-link" href="{{ site.baseurl }}/module-8/">Where to next?</a>

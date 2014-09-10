@@ -351,3 +351,4 @@ Clearly, the West is the dominant direction of the strongest gusts, followed by 
 
 Note the format of this chart could be improved. At the very least a meaningful title would help the reader make sense of it. Can you think of a meaningful title and apply it to this chart?
 
+<a class="next-link" href="{{ site.baseurl }}/module-3/">Go to the next module</a>

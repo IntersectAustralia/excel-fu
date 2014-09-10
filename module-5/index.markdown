@@ -265,4 +265,4 @@ It's a trade off between time spent working out how to use the various import me
 
 Both carry the risk of introducing errors. And for this reason it is important to sanity check your data, as we will do in the next module.
 
-
+<a class="next-link" href="{{ site.baseurl }}/module-6/">Go to the next module</a>

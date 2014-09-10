@@ -66,3 +66,4 @@ This course assumes basic knowledge of Excel, including:
 The course was compiled using Microsoft Excel 2011 for Mac. There are many versions of Excel in use. Some features used here may not be available in all versions. Also, the way in which they are accessed may differ from version to version. If the instructions don't make sense for your version of Excel, try a web search with some keywords and your Excel version, e.g. [Excel 2010 pivot tables](https://www.google.com.au/?q=Excel+2010+pivot+tables). Generally, the concepts covered will be applicable even if the steps are slightly different for your copy of Excel.
 
 
+<a class="next-link" href="{{ site.baseurl }}/module-1/">Start the first module</a>

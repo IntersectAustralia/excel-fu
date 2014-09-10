@@ -212,3 +212,4 @@ row and up to 90 or so rows of weather records for the past 3 months:
 You should now have your data in a workable format. Congratulations! Getting the data into a format you can use is often 90% of the challenge.
 </div>
 
+<a class="next-link" href="{{ site.baseurl }}/module-2/">Go to the next module</a>

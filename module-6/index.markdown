@@ -244,3 +244,4 @@ is to add a title and ```x``` and ```y``` axis labels. In case you've forgotten 
 
 ![Final chart](19.png)
 
+<a class="next-link" href="{{ site.baseurl }}/module-7/">Go to the next module</a>

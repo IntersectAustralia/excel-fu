@@ -249,3 +249,4 @@ While the curve is quite smooth and approximately resembles a sine wave, it's in
 Note: a slight problem exists with this plot that could confuse interpretation. Can you spot it?
 </div>
 
+<a class="next-link" href="{{ site.baseurl }}/module-5/">Go to the next module</a>

@@ -51,7 +51,7 @@ Check out [this tutorial](http://www.excel-easy.com/examples/formula-auditing.ht
 
 These features are also great for working out what the heck is going on in a workbook someone else has emailed you.
 
-## Clustering and Google Refine
+## Clustering and Open Refine
 Often data is noisy, messy and inconsistent and needs cleaning before it can be analysed. You may, for instance, have a worksheet with UFO sightings by country. The "country" column is unfortunately really inconsistent. Australia for instance is written in different ways:
 
 * Australia
