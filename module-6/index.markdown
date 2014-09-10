@@ -2,6 +2,11 @@
 layout: post
 title: Module 6
 ---
+
+<div class="objective">
+Learning Objective: Working with and visualising the data
+</div>
+
 ## Working with the Sunrise and Sunset Data
 
 In module 5 we got to the point where we had an Excel worksheet that looked like this:
@@ -216,11 +221,11 @@ Let's get under way:
 4. Next click the **Add** button.
 5. In the "Name" text box enter ```=Processed!H1```.
 6. In the "X values" text box enter ```=Processed!EventDate```.
-7. In the "Y values" text box enter ```=Processsed!SunriseTime```.
+7. In the "Y values" text box enter ```=Processed!SunriseTime```.
 8. Click the **Add** button again to add a second series.
 5. In the "Name" text box enter ```=Processed!I1```.
 6. In the "X values" text box enter ```=Processed!EventDate```.
-7. In the "Y values" text box enter ```=Processsed!SunsetTime```.
+7. In the "Y values" text box enter ```=Processed!SunsetTime```.
 
    Now attempt to add a series, using the same procedure, for day length. (Hint: Look at the screen grab below):
 

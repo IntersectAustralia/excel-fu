@@ -2,8 +2,13 @@
 layout: post
 title: Module 7
 ---
+
+<div class="objective">
+Learning Objective: Visualising two datasets on on the same timeseries
+</div>
+
 ## Putting it all together
-In this module we combine our average daily maximum temperature data with our sunrise and sunset data to explore the phenomenon of seaonal lag in coastal Sydney.
+In this module we combine our average daily maximum temperature data with our sunrise and sunset data to explore the phenomenon of seasonal lag in coastal Sydney.
 
 ## Preparation
 1. Open the "BOMWeatherData.xlsx" file you worked with in module 1 and 2 in **Microsoft Excel**.

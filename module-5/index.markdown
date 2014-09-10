@@ -3,6 +3,10 @@ layout: post
 title: Module 5
 ---
 
+<div class="objective">
+Learning Objective: Importing and cleaning data into a workable format in Excel
+</div>
+
 ## Importing Sunrise and Sunset Times
 In this section we calculate the sunrise and sunset times for every day of the year for Sydney.
 Later we'll be able to compare these times with average maximum daily temperatures to see how day length affects temperature.
