@@ -439,6 +439,17 @@ a:visited { color: #205caa; }
   background-position: 10px 10px;
 }
 
+.finished {
+  padding: 10px;
+  padding-left: 40px;
+  border-left: solid 2px orange;
+  background-image: url('../icons/finished.png');
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+
+
+
 
 .note {
   padding: 10px;

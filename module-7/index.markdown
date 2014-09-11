@@ -17,8 +17,12 @@ In this module we combine our average daily maximum temperature data with our su
 1. In the new "SeasonalLag.xlsx" file, rename the first worksheet to "Seasonal Lag"
 1. Remove any other (blank) worksheets in "SeasonalLag.xlsx".
 
+# Excerise 1
 
 ## Bringing our data in
+
+### Steps
+
 First we need to get our data into the same place:
 
 1. Ensure that "BOMWeatherData.xlsx" is the active workbook.
@@ -34,6 +38,8 @@ First we need to get our data into the same place:
 4. Click the ```OK``` button. A copy of the "Final" worksheet should now be present in "SeasonalLag.xlsx".
 
 5. You can now close the "BOMWeatherData.xlsx" workbook.
+
+### Next Steps
 
 Now:
 
@@ -51,9 +57,15 @@ Now:
 
 5. You can now close the "GASunriseSunsetData.xlsx" workbook.
 
+<div class="note">
+  Your data has been copied into a new workbook and is ready to work with.
+</div>
+
 <div class="warning">
 Note that the worksheets are copied rather than linked. So if you make a change in, say, "BOMWeatherData.xlsx", it will not be reflected in "SeasonalLag.xlsx".
 </div>
+
+# Exercise 2
 
 ## Presenting the data on a common plot
 
@@ -65,15 +77,17 @@ For "SeasonalLag.xlsx" it will look as follows:
 
 (Click ```Close``` to exit this dialog box).
 
+### Steps
+
 The named ranges, once again, greatly simplify plotting the data:
 
-1. Ensure the "Seasonal Lag" worksheet is active.
+1. Ensure the **"Seasonal Lag"** worksheet is active.
 
-2. Select "Smooth Marked Scatter" from the "Scatter" option on the "Charts" ribbon:
+2. **Select "Smooth Marked Scatter"** from the **"Scatter"** option on the **"Charts"** ribbon (on a Mac) or (on a PC) from the **"Insert"** menu, **click** the **Scatter** opion, and **use the mouse to highlight** the available type of **scatter chart options** to **select "Scatter with Smooth Lines and Markers"**:
 
     ![Smooth line scatter](04.png)
 
-3. Choose the "Select" (Data) option from the "Charts" ribbon: 
+3. Choose the "Select" (Data) option from the "Charts" ribbon (on a Mac) or (on a PC) from the **"Design"** menu **click** "Select Data":
 
     ![Select Data](05.png)
 
@@ -91,9 +105,20 @@ The named ranges, once again, greatly simplify plotting the data:
 1. In the "Y values" text box enter ```=Final!AverageMaxTemp```.
 1. Click the ```OK``` button.
 
-A plot will be displayed, but it will be all wrong. Why?
 
 ![Bad plot](07.png)
+
+<div class="note">
+  Your data is visualised as a scatter plot.
+</div>
+
+# Exercise 3
+
+## Improving the presentation of the chart
+
+While a plot is displayed, the **day length** series is pushed right to the bottom of the plot area. Can you work out why?
+
+### Steps
 
 To fix this we need to place the temperature data on a **secondary axis**:
 
@@ -113,7 +138,13 @@ The plot makes much more sense now:
 
 ![Improved plot](11.png)
 
-But it could still be improved by:
+<div class="note">
+  The two series are now plotted on separate axes.
+</div>
+
+### Next Steps
+
+While the presentation of the plot is greatly improved by using a secondary axis, it could be further improved by:
 
 1. Increasing the size of the plot.
 1. Re-positioning the legend so it takes up less space.
@@ -129,8 +160,16 @@ You should arrive at a plot similar to this one:
 
 ![Final plot](12.png)
 
+<div class="note">
+  Your data is visualised as a scatter plot with enhanced formatting and labels.
+</div>
+
 What does this tell us about the relationship between temperature and day length in Sydney?
 
+---
 
+<div class="finished">
+Congratulations! You have completed the <b>Excel Fu: Excel for Researchers</b> course. We hope you've enjoyed the experience. Please click <b>Where to next?</b> to complete a course evaluation survey that will help us make this course even better.
+</div>
 
 <a class="next-link" href="{{ site.baseurl }}/module-8/">Where to next?</a>
