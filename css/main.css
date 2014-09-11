@@ -94,7 +94,7 @@ a:visited { color: #205caa; }
   width: -webkit-calc(65% - 10px);
   width: -moz-calc(65% - 10px);
   width: -o-calc(65% - 10px);
-  width: calc(10px);
+  width: calc(65% - 10px);
   margin-right: 10px
 }
 .footer-col-1 {

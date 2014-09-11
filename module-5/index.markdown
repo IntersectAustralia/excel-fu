@@ -45,9 +45,14 @@ Once the data is in that format, we can do pretty much anything we want with it 
 3. Add or rename a second worksheet "Processed".
 3. Add or rename a third worksheet "Metadata".
 
+# Exercise 1
+
 ## Sourcing the Sunrise Sunset Times
+
+### Steps
+
 4. Open a web browser and visit Geoscience Australia's [Compute Sunrise, Sunset & Twilight Times](http://www.ga.gov.au/geodesy/astro/sunrise.jsp) page.
-5. Under the section of the page entitled "Use the National Gazetteer of Australia to determine the Longitude and Latitude", enter:
+5. Under the section of the page entitled **"Use the National Gazetteer of Australia to determine the Longitude and Latitude"**, enter:
   * A **Place Name** of "Sydney".
   * Select the **Place Type** "Towns & Localities".
   * Select the **State/Authority** "New South Wales".
@@ -58,12 +63,12 @@ Once the data is in that format, we can do pretty much anything we want with it 
 6. Click the **Submit** button.
 7. The form will refresh and you'll be able to select from a list of matching place names:
     ![Select the place name](02.png)
-8. Click on the third location in the list, labelled "Sydney" and at **Lat** -33&deg; 52', **Lon** 151&deg; 12'. The chosen location will automatically be transferred to the second form further down the page:
+8. **Click on** the **third location** in the list, labelled **"Sydney"** and at **Lat** -33&deg; 52', **Lon** 151&deg; 12'. The chosen location will automatically be transferred to the second form further down the page:
     ![Sunrise sunset calculator options](03.png)
 9. You will also need to:
-  * Select "Defined Event" and "Sunrise/Sunset" under **Select the Required Event**.
+  * Select **"Defined Event"** and **"Sunrise/Sunset"** under **Select the Required Event**.
   * The current year (_2014_, _2015_, _2016_, etc.) under **Enter Date**.
-10. Click the **Compute** button. In a few moments, the page will refresh to show "Sunrise & Sunset Results":
+10. **Click** the **Compute** button. In a few moments, the page will refresh to show "Sunrise & Sunset Results":
     ![Results format](04.png)
 
     In order to import the data into Excel we need to copy it to the clipboard.
@@ -78,9 +83,18 @@ Once the data is in that format, we can do pretty much anything we want with it 
 
 12. Now copy the selection to the clipboard, using the **Copy** option in the **Edit** menu. Alternatively you can use the keyboard shortcut `Control-C`.
 
+<div class="note">
+  You have successfully sourced your dataset
+</div>
+
+# Exercise 2
+
 ## Importing into Excel
+
+### Steps
+
 1. Switch to Excel and ensure the "Raw" worksheet is selected.
-2. Position the cursor in the top-left cell ```A1```.
+2. Position the cursor in the *top-left* cell ```A1```.
 3. Select **Paste** from the **Edit** menu, or use the keyboard shortcut `Control-V`.
 
     The Excel worksheet will now appear as follows:
@@ -91,9 +105,11 @@ Once the data is in that format, we can do pretty much anything we want with it 
     We'll need to split this data into columns. But first, we need to do a preliminary tidy up.
 
 ## Tidying up the data
-The first thing to note is that the data contains quite a few blank lines. There's a quick way to remove these:
+The first thing to note is that the data contains quite a few blank lines. Fortunately there's a quick way to remove these.
 
-1. Choose "Go To..." from the "Edit" menu.
+### Next Steps
+
+1. **Choose "Go To..."** from the **"Edit"** menu (on a Mac) or (on a PC) from the **Home** menu **select "Find & Go"** and then **select "Go > To"**.
 2. Select the "Special" button from the resulting dialog box.
 3. Choose the "Blanks" option and click the "OK" button.
 
@@ -101,7 +117,8 @@ The first thing to note is that the data contains quite a few blank lines. There
 
     ![All blank rows selected](08.png)
 
-4. Now choose "Delete..." from the "Edit" menu.
+4. Now choose "Delete..." from the "Edit" menu (on a Mac) or (on a PC
+) from the **Home** menu **select Delete**.
 5. Choose "Entire row" from the resulting dialog box.
 6. Click the "OK" button.
 
@@ -109,7 +126,14 @@ The first thing to note is that the data contains quite a few blank lines. There
 
     ![All blank rows selected](09.png)
 
+<div class="note">
+  You have now imported and tidied your data in Excel.
+</div>
+
+# Exercise 3
+
 ## Removing the metadata
+
 The first few lines of the data and the last line actually constitute **metadata**:
 
 ![Some metadata](10.png)
@@ -121,14 +145,16 @@ The fact that it is in a different format can upset the import process, so we ne
 But we don't just want to trash it. Metadata is often a useful reference, particularly 6 months or 6 years down the track when the details are forgotten.
 So we'll copy it into the "Metadata" Excel worksheet we created earlier.
 
+### Steps
+
 1. Select the metadata from the top of the "Raw" worksheet:
 
     ![Metadata preamble](11.png)
 
-2. Cut the cells using the "Cut" option from the "Edit" menu. Or use the `Control-X` keyboard shortcut.
+2. Cut the cells using the "Cut" option from the "Edit" menu (on a Mac) or (on a PC) from the **"Home"** menu **select** the **"scissors"** icon. Alternatively you can use the `Control-X` keyboard shortcut.
 3. Switch to the "Metadata" worksheet.
 4. Position the cursor in the top-left cell ```A1```.
-5. Paste in the metadata using the "Paste" option from the "Edit" menu. Or use the `Control-V` keyboard shortcut.
+5. Paste in the metadata using the "Paste" option from the "Edit" menu (on a Mac) or (on a PC) from the **"Home"** menu **select "Paste"**. Alternatively, you can use the `Control-V` keyboard shortcut.
 
 6. Switch back to the "Raw" worksheet and select the last line of the dataset:
 
@@ -160,12 +186,21 @@ Your worksheet will now be quite neatly structured:
 
 It is now ready to be split into columns.
 
+<div class="note">
+  You have now removed extraneous information and rows from your data
+</div>
+
+# Exercise 4
+
 ## Splitting the data into columns
+
 To split the data into columns, we can use the "Text to Columns" option on the "Data" ribbon:
 
 ![Data ribbon - Text to Columns](07.png)
 
-To use this feature:
+### Steps
+
+To use the "Text to Columns" feature:
 
 1. Select the entire dataset. Since the data only occupies column A, you can accomplish this by double-clicking the top of the ```A``` column:
 
@@ -198,6 +233,12 @@ The data will now be split into columns:
 
 ![Data split into columns](21.png)
 
+<div class="note">
+  You have now split your data across multiple columns
+</div>
+
+# Exercise 5
+
 ## Unpacking the data
 
 The data is now nicely split it to columns, but the format is still a bit arcane to work with. 
@@ -206,6 +247,8 @@ That's what we'll use the "Processed" worksheet for.
 
 We can accomplish this with 12 copy-and-paste actions from the "Raw" worksheet to the "Processed" worksheet. 
 Let's run through the process for January:
+
+### Steps
 
 1. Switch to the "Raw" worksheet and select the sunrise and sunset times for January. Since January has 31 days, there should be 31 rows by 2 columns selected:
 
@@ -231,10 +274,18 @@ Once data for all 12 months has been copied across, the last record should be on
 
 ![366 rows](24.png)
 
+<div class="note">
+  Your data is now in a workable format.
+</div>
+
+# Exercise 6
+
 ## Adding a column for the date
 
 ```Column A``` in the "Processed" worksheet was left blank. Why? In order to make room for a date column that re-associates each sunrise and sunset pair with its corresponding date.
-We know the records are in sequence, with the first one referring to the 1 January of the year (say *2014*). So re-introducing the dates should be quite straightforward:
+We know the records are in sequence, with the first one referring to the 1 January of the year (say *2014*). So re-introducing the dates should be quite straightforward.
+
+### Steps
 
 1. The first step is to select the whole of ```column A``` and set its data type to "Date".
 
@@ -259,6 +310,10 @@ We know the records are in sequence, with the first one referring to the 1 Janua
 Quickly check your work by verifying that the last line of data corresponds to the last day of the year (31/12/*yyyy*):
 
 ![Check your work](26.png)
+
+<div class="note">
+Your sunrise and sunset data now has dates associated
+</div>
 
 Congratulations! You've now successfully imported a dataset that presented some real challenges. 
 The multi-column, space delimited format seemed like something Excel would struggle to import, but it is possible.
