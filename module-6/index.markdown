@@ -27,7 +27,11 @@ In this module we'll address these issues.
 1. Reopen the "GASunriseSunsetData.xlsx" file you created in module 5 in **Microsoft Excel**.
 2. Ensure that you have the second worksheet, labelled "Processed", opened.
 
+# Exercise 1
+
 ## Strings to Times
+
+### About this exercise
 
 In computer speak a bunch of characters is called a [string](http://en.wikipedia.org/wiki/String_\(computer_science\)).
 In Excel strings have the data type "Text". Strings can contain any characters, including numbers (0-9), letters (A-Z, a-z) and punctuation.
@@ -67,6 +71,8 @@ Whatever ```n``` is, ```LEFT``` will return that many characters of the input st
 So if the string is ```HELLO``` and the number is ```2```, ```LEFT``` will return ```HE```.
 As you might already have guessed, ```RIGHT``` functions in the same way, but returns the right-most ```n``` characters.
 
+### Steps
+
 Let's first extract the hours information for the sunrise:
 
 1. Position the cursor in cell ```D2```. 
@@ -90,6 +96,14 @@ Let's first extract the hours information for the sunrise:
 
    ![Time values extracted](06.png)
 
+<div class="note">
+  Your data now has the time information extracted into columns for hours and minutes.
+</div>
+
+# Exercise 2
+
+## Creating times Excel understands
+
 Now that our times are broken up into their simplest parts, we can recombine them into times Excel understands.
 For this we can use the [TIME](http://office.microsoft.com/en-au/excel-help/time-function-HP010342955.aspx?CTT=5&origin=HP010342402) function.
 It takes three input parameters, ```hour```, ```minute```, ```second``` and returns an Excel time value.
@@ -99,6 +113,8 @@ For example, ```0``` represents midnight, i.e. the beginning of the day; ```0.5`
 ```0.75``` represents 6pm, etc. This may seem odd, but it makes finding the difference between any two times as simple as subtracting one decimal number from another.
 
 So the ```TIME``` function returns a decimal number corresponding to the time parts specified as input parameters.
+
+### Steps
 
 Let's apply it to the sunrise time:
 
@@ -114,6 +130,10 @@ Let's apply it to the sunrise time:
 
    ![TIME function](09.png)
 
+<div class="note">
+  Your data now includes sunrise and sunset times in a format that Excel can understand.
+</div>
+
 Note, we said that Excel stores times as a decimal number. Why then is the time shown as "4:48am"?
 Because Excel has detected the time value, it has formatted the cell accordingly.
 If we change the data type for the cells back to "General", the times will be displayed as decimal values:
@@ -124,10 +144,15 @@ If we change the data type for the cells back to "General", the times will be di
 Warning: If you format the times as "General", make sure you <i>undo</i> before moving on to the next steps.
 </div>
 
+# Exercise 3
+
 ## Calculate Day Length
+
 So we've used the ```TIME``` function to create dates Excel can understand. 
 This makes it trivial for us to compute the length of each day of the year.
 We need only subtract the sunrise time from the sunset time.
+
+### Steps
 
 To do so:
 
@@ -142,7 +167,14 @@ You should end up with a worksheet that looks like this:
 
 We can instantly see that the day length on New Year's Day is 14h 21m, roughly as we'd expect given the early sunrise and late sunset in summer-time Sydney.
 
+<div class="note">
+  Your data now includes a calculation of the length of each day.
+</div>
+
+# Exercise 4
+
 ## Name your Ranges
+
 Now that our data is in a format we can use, we can start exploring, sanity checking, and using it.
 
 This is made easier by creating **named ranges** for our key data.
@@ -155,6 +187,8 @@ So we can find out the latest date we have coverage for by entering the formula 
 
 This is so much more meaningful, a year down the track, than trying to work out what ```=MAX(A2:A366)``` is calculating.
 
+### Steps
+
 To create a named range for the Date column:
 
 1. Select the data in column ```A``` (e.g. ```A2:A366```). The quickest way to do this is place the cursor in cell ```A2``` and press the ```Control-Shift-Down``` (```Command-Shift-Down``` for Mac users) keyboard shortcut.
@@ -165,8 +199,17 @@ To create a named range for the Date column:
 
 Now repeat steps 1 and 2 to create the named ranges ```SunriseTime```, ```SunsetTime``` and ```DayLength```, based on the data in columns ```H```,```I``` and ```J```.
 
+<div class="note">
+  You have now created named ranges for your data.
+</div>
+
+# Exercise 5
+
 ## Sanity Checking the Data
+
 We can now run some checks to see if the data fits with our intuitive understanding of the seasons:
+
+### Steps
 
 1. Locate a blank cell, say ```L2``` and enter the formula ```=MIN(EventDate)```.
 1. Locate a blank cell, say ```L3``` and enter the formula ```=MAX(EventDate)```.
@@ -176,6 +219,8 @@ Just as Excel stores times as a decimal value between 0 and 1, it stores dates a
 (And combined dates and times, you guessed it, are stored as a number with a whole and factional part.)
 
 With any luck the minimum and maximum dates will reflect the first and last day of the year to which the data pertains.
+
+### Next Steps
 
 Next have a go at:
 
@@ -196,6 +241,12 @@ You should end up with a worksheet that looks something like this:
 For extra credit, you might also like to calculate the average day length across the year.
 Is the figure exactly what you'd expect? If not, can you explain the discrepancy?
 
+<div class="note">
+  The calculations are successfully applied to your data
+</div>
+
+# Exercise 6
+
 ## Plotting the Data
 These quick checks suggest the data is good. But nothing beats plotting the data to
 point out issues with it. Gaps, outliers and data that's out of sequence become immediately apparent when data is plotted.
@@ -205,9 +256,11 @@ and the specific event (sunset, sunrise, day length) will be plotted on the ```y
 
 Just as our named ranges made it easy to apply formulas to the data, they will simplify selecting the data to plot.
 
+### Steps
+
 Let's get under way:
 
-1. Select "Smooth Lined Scatter" from the "Scatter" option on the "Charts" ribbon:
+1. **Select "Smooth Lined Scatter"** from the **"Scatter"** option on the **"Charts"** ribbon (on a Mac) or (on a PC) from the **"Insert"** menu, **click** the **Scatter** option, and **use the mouse to highlight** the available type of **scatter chart options** to **select "Scatter with Smooth Lines and Markers"**:
 
     ![Smooth Lined Scatter](14.png)
 
@@ -231,7 +284,7 @@ Let's get under way:
 
     ![Series](17.png)
 
-8. Click the **OK** button to close the dialog box.
+8. Click the ```OK``` button to close the dialog box.
 
 After resizing, your plot will look similar to this one:
 
@@ -248,5 +301,9 @@ is to add a title and ```x``` and ```y``` axis labels. In case you've forgotten 
 [here are some instructions](http://office.microsoft.com/en-au/excel-help/add-or-remove-titles-in-a-chart-HP001234162.aspx).
 
 ![Final chart](19.png)
+
+<div class="note">
+  Your data has been plotted and contains axis labels.
+</div>
 
 <a class="next-link" href="{{ site.baseurl }}/module-7/">Go to the next module</a>
