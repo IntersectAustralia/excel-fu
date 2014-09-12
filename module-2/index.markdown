@@ -3,7 +3,7 @@ layout: post
 title: Module 2
 ---
 <div class="objective">
-Learning Objective: Able to explore data by sorting, filtering, formatting, charting and pivot tables
+Learning Objective: To explore the data by sorting, filtering, formatting, charting and pivot tables
 </div>
 
 ## Exploring the Daily Weather Data 
@@ -34,13 +34,15 @@ As the first step, we should explore if the weather data looks plausible. Calcul
 
 ### Steps
 
+1. In the "Processed" tab, scroll down to the bottom of the data. In the first free row in```Column A``` enter the word **"Minimum:"**. In the cell below, enter **"Average:"**, and the one below that **"Maximum:"**.
+
 1. **Scroll** down and **position your cursor** in ```Column B``` on the first blank line after the last line of data.
 
 2. **Type** in ```=MIN(```, then **select all the data above** in ```Column B```, then **type** ```)```, then hit the **enter** key. The minimum temperature will be calculated for you.
 
 3. **Repeat** the process to **calculate the average** in the cell immediately below. Hint, use ```=AVERAGE(...)```.
 
-4. **Repeat** the process again to **calculate the maximum** in the cell immediately below that one. Hint, use ```=MAX(...)```.
+4. **Repeat** the process again to **calculate the maximum** in the cell immediately below that one. (**Hint:** use ```=MAX(...)```).
 
 5. Follow the steps above to **calculate the mimimum, average, and maximum** for columns ```C``` and ```D```.
 
@@ -58,7 +60,7 @@ Simply use the keyboard shortcut <b>Control-`</b> ("`" is above the tab key) to 
 <br/>
 <p>
 <b>Warning:</b> You may notice little green triangles in the top-left of some cells:
-These are where Excel has detected a possible inconistency in your worksheet data or formulas. Always check these, if only to ignore them:
+These are where Excel has detected a possible inconistency in your worksheet data or formulas. Always check these, by clicking on the icon, even if only to ignore them:
 </p>
 <br/>
 <img src="10.png" alt="Validation errors"/>
@@ -67,13 +69,14 @@ These are where Excel has detected a possible inconistency in your worksheet dat
 
 ### Formatting
 
-Applying a bit of formatting can really to assist with the interpretation of the figures:
+Applying a bit of formatting can really to assist with the interpretation of the figures.
+In this case the Minimum, Average and Maximum lines are highlighted in Yellow.
 
 ![Min, average, max formatting](04.png)
 
 ### Hidden Rows
 
-As can [hiding rows](http://office.microsoft.com/en-au/excel-help/show-or-hide-columns-and-rows-HP010342574.aspx) so we can align the calculated values with the column headings:
+We can use can Excel's [row hiding feature](http://office.microsoft.com/en-au/excel-help/show-or-hide-columns-and-rows-HP010342574.aspx) to align the calculated values with the column headings:
 
 ![Hiding cells](05.png)
 
@@ -85,22 +88,24 @@ Warning: Hiding rows can cause confusion. Be sure to check the row numbers &mdas
 
 To get around the issues with hidden rows you may prefer to [freeze panes](http://office.microsoft.com/en-au/excel-help/freeze-or-lock-rows-and-columns-HP001217048.aspx). You can freeze the header row, for instance, which will cause it to remain static at the top of your screen, while all the data rows scroll.
 
-(If you have hidden cells, unhide them before moving to the next section.)
+(**Note:** If you have hidden cells, unhide them before moving to the next section.)
 
 <div class="note">
   The worksheet should now contain calculated minimums, maximums, and averages
   for minimum temperature, maximum temperature and rainfall.
 </div>
 
-The upshot: the minimums, averages and maximums all look plausible for Sydney for that time of year, so our data is probably sound.
+The upshot: If the minimums, averages and maximums all look plausible for Sydney for that time of year, our data is probably sound.
 
 # Exercise 2
 
 ## Coldest nights? Hottest nights?
 
-Conditional formatting is great for highlighting cells based on a given rule. You might for instance highlight cells whose value is above or below a threshold. Or you might want to highlight cells with the ```n``` highest or lowest values.
+Conditional formatting is great for highlighting cells based on a given rule. You might for instance highlight cells whose value is above or below a threshold. Or you might want to highlight cells with the ```n``` highest or lowest values. To achieve this we use rules.
 
-In this case we want to add two rules. The first to highlight the hottest 10% of nights <span style="color:red">red</span> and the second to highlight the coldest 10% of nights <span style="color:green">green</span>.
+In this case we want to **add two rules**:
+*  highlight the hottest 10% of nights <span style="color:red">red</span> 
+* highlight the coldest 10% of nights <span style="color:green">green</span>.
 
 ### Steps
 
@@ -112,21 +117,23 @@ To apply conditional formatting to the mimimum temperature:
 
     ![Conditional Formatting Top 10%](01.png)
 
-3. On the resulting dialog box, **enter "10"** in the **text box** and **click** the ```OK``` button:
+3. On the resulting dialog box, **enter "10"** in the **text box**. We will leave the format colour as the default.
 
     ![Top 10% Rule](02.png)
 
+4. **Click** the ```OK``` button.
+
 <div class="note">
-The cells which contain the top 10% of minimum nightly temperature (i.e. the hottest nights) should be highlighted in red (example below)
+The cells that contain the top 10% of minimum nightly temperature (i.e. the hottest nights) will be highlighted in red (example below)
 </div>
 
 ![10% Rule Output](06.png)
 
 ### A Quick Activity
 
-Now see if you can:
+Using the previous exercise as a guide, now see if you can:
 
-* **highlight the coldest 10% of nights** green.
+* **highlight the coldest 10% of nights** in green.
 
 * for the data in ```Column C```, containing the Maximum Temperature, see if you can display some red "Data Bars":
 
@@ -142,7 +149,15 @@ Your worksheet should now look similar to this:
 
 <div class="inset">
 <div class="title">Sparklines</div>
-<p><b>Tip:</b> The "Data Bars" and "Colour Scales" offered by conditional formatting are great for showing differences between values in adjacent cells. What if you wanted to summarise multiple values, graphically in a single cell? <a href="http://www.excel-easy.com/examples/sparklines.html">Sparklines</a> are tiny graphs that occupy a single cell, based on data in a range of cells. They are very cool. Here are some that summarise the minimum and maximum temperatures and the rainfall:
+<p><b>Tip:</b> The "Data Bars" and "Colour Scales" offered by conditional formatting are great for showing differences between values in adjacent cells.
+</p>
+<br/>
+<p>
+So what if you wanted to summarise multiple values, graphically in a single cell? <a href="http://www.excel-easy.com/examples/sparklines.html">Sparklines</a> are tiny graphs that occupy a single cell, based on data in a range of cells. They are very cool.
+</p>
+<br/>
+<p> 
+Here are some that summarise the minimum and maximum temperatures and the rainfall:
 </p>
 <br/>
 <img src="09.png" alt="Sparklines"/>
@@ -151,7 +166,7 @@ Your worksheet should now look similar to this:
 # Exercise 3
 
 ## Sorting
-Our data comes from the BOM sorted by date. Excel allows us to easily sort it by another column. We can even sort data by multiple columns (the classic example being sorting by a _surname_ column, then a _first name_ column). In our case we want to sort by the **Minimum temperature** column.
+Our data comes from the BOM already sorted by date. Excel allows us to easily sort the data by another column. We can even sort data by multiple columns (the classic example being sorting by a _surname_ column, then a _first name_ column). In this case we want to sort by the **Minimum temperature** column.
 
 ### Steps
 
@@ -159,9 +174,11 @@ Our data comes from the BOM sorted by date. Excel allows us to easily sort it by
 
 2. Select **Sort** from the **Data** menu.
 
-3. In the resulting dialog box, select "Minimum temperature" as the **Column**, select "Values" for **Sort On**, and select "Smallest to Largest" for the **Order**. Click the ```OK``` button:
+3. In the resulting dialog box, select "Minimum temperature" as the **Column**, select "Values" for **Sort On**, and select "Smallest to Largest" for the **Order**. 
 
     ![Sorting dialog box](11.png)
+
+4. Click the ```OK``` button.
 
 Your conditional formatting is still active, so the green shaded bottom 10% of temperatures appear first:
 
@@ -183,15 +200,19 @@ In the case of the daily BOM data, there is a **Direction of maximum wind gust**
 
 To enable filtering:
 
-1. Select **Filter** from the **Data** menu. Little arrows will appear in the header row:
+1. Start by **selecting the rows of data**, including the header row.
+
+1. Select **Filter** from the **Data** menu. Little arrows will appear in the header row, i.e.:
 
     ![Filtering](13.png)
 
 2. Click on the arrow for the **Direction of maximum wind gust** column.
 
-3. On the pop-up box that appears, select to filter by the "W" value:
+3. On the pop-up box that appears, select to filter by the "W" value. (**Hint**: Uncheck the box next to "Select All" then check the box adjacent to "W").
 
     ![Filtering](14.png)
+
+4. Close the pop-up box.
 
 <div class="note">
 Your worksheet is now filtered to show only rows where the wind direction is Westerly.
@@ -208,23 +229,25 @@ Make sure you clear the filter before moving to the next section.
 
 ## PivotTables
 
-Filtering is great for viewing a subset of the data. But what if you want to know how many days the maximum wind gust was a Westerly as compared to other wind directions? For this we need to aggregate our data, and a PivotTable is well suited to this task.
+Filtering (as we discovered in the last exercise) is great for viewing a subset of the data. But what if you want to know how many days the maximum wind gust direction was a Westerly as compared to other wind directions? For this we need to aggregate our data, and a Pivot Table is well suited to this task.
 
 ### Steps
 
-To add a PivotTable:
+To add a Pivot Table:
 
 1. Select your data, including the header row.
 
 2. Select **PivotTable...** from the **Data** menu (on a Mac) **or** (on a PC) **click** the **Insert** ribbon and select **Pivot Table**.
 
-3. In the resulting dialog box, ensure "New worksheet" is selected and click the ```OK``` button:
+3. In the resulting dialog box, ensure "New worksheet" is selected as the destination for your pivot table and click the ```OK``` button:
 
     ![PivotTable dialog](16.png)
 
-4. A new worksheet will be inserted and the **PivotTable Builder** will appear. Configure it by **dragging** the **"Direction of maximum wind gust"** field as shown:
+4. A new worksheet will be inserted and the **PivotTable Builder** will appear. Configure it by **dragging** the **"Direction of maximum wind gust"** field into both the **Row labels** and **Values** boxes as shown:
 
     ![PivotTable builder](17.png)
+
+5. Close the Pivot Table Builder.
 
 <div class="note">
 You should now have a PivotTable, as below.
@@ -232,11 +255,11 @@ You should now have a PivotTable, as below.
 
 ![PivotTable view](18.png)
 
-As you can see, Westerly winds dominated during the period of data coverage for Sydney.
+As you can see, Westerly winds dominated during this period for Sydney.
 
 Try playing with the PivotTable to see what other insights into the data you can get.
 
-Also, consider renaming the worksheet. By default it will be called "Sheet1" or similar. "Weather Summary" would be much more meaningful six months down the track!
+Also, consider renaming the worksheet. By default it will be called "Sheet1" or similar. "Weather Summary" would be much more meaningful when you review it six months down the track!
 
 # Exercise 6
 
@@ -297,7 +320,7 @@ It's a good idea to give a name to the column.
 
 ## Charting
 
-Later on we will do some X-Y scatter plots to show time series data. For the moment we'll try a [polar style plot](http://en.wikipedia.org/wiki/Polar_coordinate_system). These are particularly useful for showing wind direction. Excel calls these "radar" plots.
+Later on we will do some X-Y scatter plots to show time series data. For the moment we'll try a [polar style plot](http://en.wikipedia.org/wiki/Polar_coordinate_system). These are particularly useful for showing wind direction in our example. Excel calls these "radar" plots.
 
 ### Steps
 
@@ -309,9 +332,12 @@ To get started:
 
 3. **Paste the data** into the **"Chart"** worksheet using **Paste Special...** from the **Edit** menu.
 
-4. In the dialog box that is displayed **select** the **"Values"** option and **click** the ```OK``` button:
+4. In the dialog box that is displayed **select** the **"Values"** option 
+
 
     ![Paste special](24.png)
+
+5. **Click** the ```OK``` button:
 
 This will copy the data to the new sheet while discarding all formulas. 
 
@@ -320,6 +346,8 @@ The <b>chart</b> worksheet should now look like this:
 </div>
 
 ![Chart worksheet](25.png)
+
+You will notice that the row labels are sorted by alpha order at the moment.  We now want to tidy up the data further in preparation for creating our polar style plot.
 
 ### Next Steps
 
@@ -331,7 +359,8 @@ Now:
 
 3. **Rename "Total"** to **"Days"**.
 
-4. Lastly **select the headers and data** in the **"Direction"** and **"Days"** columns:
+4. Lastly **select the headers and data** in both the **"Direction"** and **"Days"** columns:
+
 
     ![Direction and Days data](26.png)
 
@@ -347,8 +376,11 @@ Your new chart should now be generated (as below).
 
 ![Wind gust chart](28.png)
 
-Clearly, the West is the dominant direction of the strongest gusts, followed by the South.
+Clearly, the West is the dominant direction of the strongest gusts, followed by the South in this example.
 
 Note the format of this chart could be improved. At the very least a meaningful title would help the reader make sense of it. Can you think of a meaningful title and apply it to this chart?
+
+
+(**Hint:** In the ribbon, select "Chart Labels" then "Chart Title".  Choose if you want the title in the frame or above it.)
 
 <a class="next-link" href="{{ site.baseurl }}/module-3/">Go to the next module</a>
