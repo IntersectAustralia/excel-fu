@@ -31,7 +31,7 @@ In this module we'll address these issues.
 
 ## Strings to Times
 
-### About this exercise
+### What's a String?
 
 In computer speak a bunch of characters is called a [string](http://en.wikipedia.org/wiki/String_\(computer_science\)).
 In Excel strings have the data type "Text". Strings can contain any characters, including numbers (0-9), letters (A-Z, a-z) and punctuation.
@@ -51,6 +51,8 @@ So too with converting this string to a time Excel understands.
 We know that each string actually contains two bits of information - the hour and the minute. 
 So a logical place to begin is to split the string into these two parts.
 Once we've separated our hour information from our minute information, it becomes far easier to recombine them into a time format Excel can work with.
+
+### Excel functions we can use
 
 Fortunately Excel provides some tools, in the form of **functions**, that help us split strings into parts.
 
@@ -108,7 +110,7 @@ Now that our times are broken up into their simplest parts, we can recombine the
 For this we can use the [TIME](http://office.microsoft.com/en-au/excel-help/time-function-HP010342955.aspx?CTT=5&origin=HP010342402) function.
 It takes three input parameters, ```hour```, ```minute```, ```second``` and returns an Excel time value.
 
-Times in Excel are actually stored as decimal values that represent fractions of a day.
+You may find it interesting that times in Excel are actually stored as decimal values that represent fractions of a day.
 For example, ```0``` represents midnight, i.e. the beginning of the day; ```0.5``` represents noon or half-way through the day;
 ```0.75``` represents 6pm, etc. This may seem odd, but it makes finding the difference between any two times as simple as subtracting one decimal number from another.
 
@@ -156,10 +158,10 @@ We need only subtract the sunrise time from the sunset time.
 
 To do so:
 
+4. Give the column ```J``` a heading by typing "Day Length" in cell ```J1```.
 1. Position your cursor in ```J2```.
 2. Type the formula ```=I2-H2``` and press the Enter key.
 3. Now replicate the same formula in column ```J``` for each row of data.
-4. Finally give the column a heading "Day Length". 
 
 You should end up with a worksheet that looks like this:
 
@@ -200,7 +202,7 @@ To create a named range for the Date column:
 Now repeat steps 1 and 2 to create the named ranges ```SunriseTime```, ```SunsetTime``` and ```DayLength```, based on the data in columns ```H```,```I``` and ```J```.
 
 <div class="note">
-  You have now created named ranges for your data.
+  You have now created named ranges for this dataset.
 </div>
 
 # Exercise 5
@@ -292,8 +294,8 @@ After resizing, your plot will look similar to this one:
 
 From this plot we can tell with some confidence that our data is accurate.
 All three curves - like so many natural phemomena - follow an approximate sinusoid. 
-The day length peaks during the summer months.
-And reaches a minimum in the depths of winter.
+The day length peaks during the summer months
+and reaches a minimum in the depths of winter.
 The curve is smooth with no gaps and no outliers.
 
 The final step, to make this graph really useful for publication or for later reference
