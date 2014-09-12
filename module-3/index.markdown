@@ -4,7 +4,7 @@ title: Module 3
 ---
 
 <div class="objective">
-Learning Objective: Able to import data in a workable format
+Learning Objective: To import and prepare a large data set.
 </div>
 
 ## Importing Historical Weather Data 
@@ -31,11 +31,12 @@ We're going to get the maximum temperature for every day this weather station ha
 2. **Select "Temperature"** from the ```Data about``` **drop down list**.
 3. **Select "Daily"** and **"Maximum temperature"** from ```Type of data```.
 4. **Enter "Sydney"** in the ```Select a weather station in the area of interest``` text box.
-5. **Click** the ```Find``` button:
 
     ![Climate Data 1](01.png)
 
-6. **Select** the first entry, **"Sydney"**, from ```Matching towns```. And then select **"066062 Sydney (Observatory Hill)..."** from ```Nearest Bureau Stations```:
+5. **Click** the ```Find``` button:
+
+6. In the next window, **select** the first entry, **"Sydney"**, from ```Matching towns```. And then in the bottom section of the window select **"066062 Sydney (Observatory Hill)..."** from ```Nearest Bureau Stations```:
 
     ![Climate Data 2](02.png)
 
@@ -67,22 +68,25 @@ Now that we've downloaded our data, we can import it into Excel:
 
 2. **Select** the **"Data"** ribbon and from the **"External Data Sources"** section, **select "Text"** .
 
-4. **Browse** and **select the CSV file** of weather data from **your project directory**. Click the ```Get Data``` button.
+4. **Browse** and **select the CSV file** of weather data you just saved in **your project directory**. Click the ```Get Data``` button.
 
-5. **Select "Delimited"** as the **"Original data type"** and click the ```Next``` button:
+5. **Select "Delimited"** as the **"Original data type"**.
 
     ![Delimited](05.png)
 
-6. Ensure **"Comma" is (exclusively) selected as the delimiter**. Quickly check the "Data preview" pane to ensure the data is being correctly broken up into columns:
+6. Click the ```Next``` button:
+
+6. Ensure **"Comma" is (exclusively) selected as the delimiter**. Quickly check the "Data preview" pane at the bottom of this window to ensure the data is being correctly broken up into columns:
 
     ![Delimited](06.png)
 
 7. **Click** the ```Finish``` button.
 
-8. On the resulting dialog, **ensure the data** will be **placed in cell** ```$A$1``` and **click** the ```OK``` button:
+8. On the resulting dialog, **ensure the data** will be **placed in cell** ```$A$1```:
 
    ![Ensure the data will be placed in cell $A$1](07.png)
 
+8. **Click** the ```OK``` button.
 
 <div class="note">
 The imported data should look as follows:
@@ -92,7 +96,7 @@ The imported data should look as follows:
 
 ### Checking the data
 
-* There is a lot of redundancy in this data. The "Product code" and "Bureau of Meteorology station number" are the same for every line.This is what we'd expect since we asked for one type of data (the "product") for one station ("66062 - Observatory Hill").
+* There is a lot of redundancy in this data (above) that we will be working on in the next module. For example, the "Product code" and "Bureau of Meteorology station number" are the same for every line. This is what we'd expect since we asked for one type of data (the "product") for one station ("66062 - Observatory Hill").
 
 * Next we have separate columns for "Year", "Month" and "Day". Taken together, these represent the day the temperature was recorded.
 When combined they are unique for each line of the file.
@@ -108,7 +112,7 @@ When combined they are unique for each line of the file.
 As a quick and dirty check, you might like to enter the following formula into Excel to estimate the expected row count ```=(YEAR(TODAY())-1859)*365.25```. It's a bit rough, but it will tell us if we're in the ballpark. How does it work?
 
 <div class="note">
-Weather dataset has successfully been imported into Excel in a workable format
+Weather dataset has successfully been imported into Excel in a workable format.
 </div>
 
 <a class="next-link" href="{{ site.baseurl }}/module-4/">Go to the next module</a>
