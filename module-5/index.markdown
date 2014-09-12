@@ -34,7 +34,7 @@ Of course, before starting out it's worth having the objective in mind.
 
 In this case we'd like to arrive at an Excel worksheet with 365 rows of data (or 366 for leap years).
 Each row would contain the day of the year and the sunrise and sunset time.
-(The times should also appear and *behave* like times in Excel, rather than plain numbers like ```0448``` and ```1909``` per the original format).
+In the next module, we'll work on changing the times so they appear and *behave* like times in Excel, rather than plain numbers like ```0448``` and ```1909``` per the original format.
 
 Once the data is in that format, we can do pretty much anything we want with it in terms of analysis.
 
@@ -93,7 +93,7 @@ Once the data is in that format, we can do pretty much anything we want with it 
 
 ### Steps
 
-1. Switch to Excel and ensure the "Raw" worksheet is selected.
+1. Switch to Excel and ensure the "Raw" worksheet is selected in your new workbook.
 2. Position the cursor in the *top-left* cell ```A1```.
 3. Select **Paste** from the **Edit** menu, or use the keyboard shortcut `Control-V`.
 
@@ -132,7 +132,7 @@ The first thing to note is that the data contains quite a few blank lines. Fortu
 
 # Exercise 3
 
-## Removing the metadata
+## Managing the metadata
 
 The first few lines of the data and the last line actually constitute **metadata**:
 
