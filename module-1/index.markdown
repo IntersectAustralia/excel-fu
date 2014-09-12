@@ -4,7 +4,7 @@ title: Module 1
 ---
 
 <div class="objective">
-Learning Objective: Importing data into Excel in a workable format
+Learning Objective: To import data into Excel, tidy and describe the data
 </div>
 
 ## Importing Weather Data 
@@ -63,17 +63,17 @@ To get the data for the last three months:
 
 ### Steps
 
-1. Browse to the BOM page for the [current month](http://www.bom.gov.au/climate/dwo/IDCJDW2124.latest.shtml).
+1. Click on the following link to open the BOM site for Sydney, NSW Weather Observations: [http://www.bom.gov.au/climate/dwo/IDCJDW2124.latest.shtml](http://www.bom.gov.au/climate/dwo/IDCJDW2124.latest.shtml).
 
 2. Scroll down to the **Other formats** section and right click on the **plain text version** link. Choose the option to "Open the Link in New Tab".  A text file containing data separated by commas will be displayed: 
 
     ![CSV data](04.png)
 
-3. Save this file to your **project directory**.
+3. **Save** this file ("Save Page As") to your **project directory**.
 
-4. Once the data is saved, you can close off the tab.
+4. Once the data is saved, you can **close off the tab**.
 
-5. Return to the [BOM Daily Weather Observations](http://www.bom.gov.au/climate/dwo/IDCJDW2124.latest.shtml) page, scroll to "Other times and other places" and repeat the process above to download the data for the two prior months. For instance, if the current month is May 2014, download and save the data for March and April 2014 as well.
+5. Return to the [BOM Daily Weather Observations](http://www.bom.gov.au/climate/dwo/IDCJDW2124.latest.shtml) page, scroll to "Other times and other places" and repeat the process above to **download the data for the two prior months**. For instance, if the current month is May 2014, download and save the data for March and April 2014 as well.
 
 <div class="note">
 You should now have three files in your <b>project directory</b> named similar to:
@@ -88,7 +88,9 @@ You should now have three files in your <b>project directory</b> named similar t
 <br/>
 <p><a href="http://www.recordsmanagement.ed.ac.uk/InfoStaff/RMstaff/RMprojects/PP/FileNameRules/Rules.htm">File naming conventions</a> as a great way to encode valuable data about a file. Adopting the habit of putting dates into a filename can be very helpful. If dates are encoded in <code>YYYYMMDD</code> format (e.g. “20140529”) and used as the first element in a file name, files sorted by name will be listed in chronological order.</p>
 <br/>
-<p>Of course the best kinds of naming conventions are documented somewhere. A quick “read me” file listing what the conventions are is invaluable for future reference. <em>Does the date in the file name refer to the date the data was collected or the date it was analysed?</em> Hmmm... better check the “read me”!</p>
+<p>Of course the best kinds of naming conventions are documented somewhere.
+In a project you may want to have a number of Excel worksheets with the same naming convention, so a quick "read me" file created in something like Notepad or MS Word saved in the project folder listing what the conventions are is invaluable for future reference. 
+Later on you may ask questions like "<em>Does the date in the file name refer to the date the data was collected or the date it was analysed?</em> Hmmm... better check the "read me"!"</p>
 </div>
 
 # Exercise 2
@@ -99,11 +101,11 @@ You should now have three files in your <b>project directory</b> named similar t
 Now we have our data, we can import it into Excel for analysis:
 
 1. Open **Microsoft Excel** with a new blank workbook.
-2. Save the workbook in your *project directory* as "BOMDailyData.xlsx".
-3. Rename the first worksheet "Raw".
-4. Delete any other worksheets (e.g "Sheet1", "Sheet2") if they exist.
+2. **Save the workbook** in your *project directory* as "BOMDailyData.xlsx".
+3. **Rename** the first worksheet "Raw".
+4. **Delete any other worksheets** (e.g "Sheet1", "Sheet2") if they exist.
 
-5. Select the "Text" option from the "External Data Sources" section of the "Data" ribbon:
+5. **Select the "Text"** option from (on a Mac) the **"External Data Sources"** section of the "Data" ribbon or (on a PC) from the **Data menu** select **"From Text"**:
 
     ![Data Ribbon - From Text](06.png)
 
@@ -117,17 +119,19 @@ Now we have our data, we can import it into Excel for analysis:
 
     ![Comma delimiter](08.png)
 
-10. The next dialog box will ask you where the data should be placed. Choose the first cell of the current sheet by selecting the "Existing sheet" option and entering ```=$A$1``` into the text box. Click the ```OK``` button:
+10. The next dialog box will ask you where the data should be placed. You want the data to start in the first cell of the current sheet, so select the "Existing sheet" option and entering ```=$A$1``` into the text box. 
 
     ![Select destination](09.png)
+
+11. Click the ```OK``` button:
 
 The data will be imported into the "Raw" worksheet:
 
 ![Imported data](10.png)
 
-Now repeat the import process for the remaining two files, leaving the newest of the files until last.
+12. You will now repeat the import process for the remaining two files, leaving the newest of the files until last.
 
-In each case, before repeating the import process, select the cell in ```Column A``` of the first completely blank line. That way, your newly imported data will be inserted immediately after the previously imported data. In this case the correct cell is ```A42```:
+In each case, before repeating the import process, select the cell in ```Column A``` of the first completely blank line. That way, your newly imported data will be inserted immediately after the previously imported data. In this example the next free cell is ```A42```:
 
 ![First blank cell](11.png)
 
@@ -167,18 +171,21 @@ processing or if it occurs in the original data provided to us.</p>
 
 To copy the worksheet:
 
-1. Select "Move or Copy Sheet" from the  "Edit" menu.
+1. Select **"Move or Copy Sheet"** from (on a Mac) the  **"Edit"** menu or (on a PC) from the **"Home"** menu.
 
-2. In the dialog box that appears, ensure "BOMDailyData.xlsx" is selected under "To book". Ensure "(move to end)" is selected under "Before sheet". And finally ensure that "Create a copy" is checked. Once these settings are made, click the ```OK``` button:
+2. In the dialog box that appears, ensure **"BOMDailyData.xlsx"** is selected under **"To book"**. Ensure **"(move to end)"** is **selected** under **"Before sheet"**. And finally ensure that **"Create a copy"** is **checked**. 
+
 
     ![Move or Copy sheet](13.png)
 
-3. Rename the copied sheet "Processed".
+3. Once these settings are made, **click** the ```OK``` button:
 
-At this stage, we could [protect the "Raw" worksheet](http://office.microsoft.com/en-au/excel-help/password-protect-worksheet-or-workbook-elements-HP010078580.aspx), thereby preventing any accidental changes. This would be a wise move, particularly for data that's hard to re-import.
+3. **Rename** the copied sheet **"Processed"**.
+
+At this stage, we could [write protect the "Raw" worksheet](http://office.microsoft.com/en-au/excel-help/password-protect-worksheet-or-workbook-elements-HP010078580.aspx), thereby preventing any accidental changes. This would be a wise move, particularly for data that's hard to re-import.
 
 <div class="note">
-  You should now have a copy of your worksheet.
+  You should now have a copy of your worksheet in a tab called "Processed".
 </div>
 
 # Exercise 3
@@ -189,13 +196,14 @@ At this stage, we could [protect the "Raw" worksheet](http://office.microsoft.co
 
 Now that we have a copy of the worksheet, we can clean it up.
 
-1. Ensure the "Processed" worksheet is active.
+1. Ensure the **"Processed"** worksheet is active (**Hint:** Click on the tab "Processed").
 
-2. Select the whole of ```Column A``` and delete it. This will remove all our metadata.
+2. Select the whole of ```Column A``` and delete it. (**Hint:** Select the **Edit** menu and choose **Delete**). This will remove all our metadata. (Remember our metadata that describes the source of the dataset is maintained in this case in the "Raw" worksheet.)
 
-3. Now remove the blank lines at the top, so the column headers appear in the first row:
+3. Now **remove the blank lines at the top**, so the column headers appear in the first row:
 
     ![Remove column headers](14.png)
+
 
 4. Now **scroll down** the page and **remove the blanks and redundant header**:
 
@@ -209,7 +217,7 @@ row and up to 90 or so rows of weather records for the past 3 months:
 ![Final data file](16.png)
 
 <div class="note">
-You should now have your data in a workable format. Congratulations! Getting the data into a format you can use is often 90% of the challenge.
+You should now have your data in a clear, well-labelled, workable format. Congratulations! Getting the data into a format you can use is often 90% of the challenge.
 </div>
 
 <a class="next-link" href="{{ site.baseurl }}/module-2/">Go to the next module</a>
