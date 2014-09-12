@@ -4,7 +4,7 @@ title: Module 4
 ---
 
 <div class="objective">
-Learning Objective: Able to import data in a workable format
+Learning Objective: To craft date and time oriented data into a format that can be visualised.
 </div>
 
 ## Working with the Historical Weather Data
@@ -47,14 +47,14 @@ To calculate the average of the maximum temperature for each day of the year, we
 
    ![4 columns of weather data](02.png)
 
-4. **Select** the **"Data"** section of the ribbon and choose the **"PivotTable"** option (on a Mac) or (on a PC) from the **Insert** menu **click "Pivot Table"**. Excel will **automatically generate a PivotTable**, but it won't be in the format we require.
+4. **Select** the **"Data"** section of the ribbon and choose the **"PivotTable"** option (on a Mac) or (on a PC) from the **Insert** menu **click "Pivot Table"**. Excel will **automatically generate a PivotTable**, but it won't yet be in the format we require.
 
 To get the right output, we need to configure the PivotTable Builder as follows:
 
 ![PivotTable Builder](03.png)
 
 This is telling Excel to format the PivotTable to show the Average Maximum Temperature for every day of the year.
-So the first row of data will contain the average of all the January 1sts in the dataset.
+So the first row of data will contain the average of all the January 1sts in the dataset, the second raw all the January 2nds, and so on.
 
 This is the output that is produced:
 
@@ -146,9 +146,11 @@ We've simplified our pivot table by removing all totals. Now we want to flatten 
 
 5. Go to **"Paste Special..."** in the **"Edit"** menu.
 
-6. **Select** the **Paste "Values"** option and **click** the ```OK``` button:
+6. **Select** the **Paste "Values"** option:
 
     ![Paste values](16.png)
+
+7. **Click** the ```OK``` button.
 
 Pasting values will paste the computed data from our PivotTable, removing any formulas that may be present.
 
@@ -166,9 +168,11 @@ Note how the "Month" column is mostly blank. In order to completely flatten our 
 
 3. **Click** the **"Special..." button** on the resulting dialog box.
 
-4. **Select** the **"Blanks"** option and click the ```OK``` button:
+4. **Select** the **"Blanks"** option:
 
 ![Goto dialog](18.png)
+
+5. **Click** the ```OK``` button:
 
 This will select all the blanks in ```Column A```, starting at cell ```A4```.
 
@@ -185,7 +189,7 @@ The worksheet should now look as follows:
 ![Updated worksheet](19.png)
 
 <div class="note">
-  You now have a flattened Pivot Table.
+  You now have a flattened the data in the Pivot Table.
 </div>
 
 # Exercise 4
@@ -198,11 +202,11 @@ Next we need to turn the month and day into a date that Excel can understand. We
 
 1. Insert a new column between columns ```B``` and ```C```.
 
+1. In the new column in ```C2```, add a meaningful heading such as "Weather Date".
+
 2. In cell ```C3``` type the formula ```=DATE(2014, A3, B3)```.
 
 3. Replicate the formula in ```C3``` for each row of data.
-
-4. Add a meaningful heading in ```C2```, such as "Weather Date".
 
 Your worksheet should now look as follows:
 
