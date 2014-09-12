@@ -4,7 +4,7 @@ title: Module 7
 ---
 
 <div class="objective">
-Learning Objective: Visualising two datasets on on the same timeseries
+Learning Objective: To explore and visualise two datasets together.
 </div>
 
 ## Putting it all together
