@@ -2,6 +2,35 @@
 layout: post
 title: Getting Started
 ---
+
+### Who are we?
+
+* [Intersect Australia](http://www.intersect.org.au/)
+* Your trainer(s)
+
+### Where to find?
+* Toilets
+* Coffee and drinking water
+* Emergency exits
+
+### How will the day work?
+* Lunch time
+* Morning and afternoon breaks
+
+### Who's this course for?
+
+Anyone! But it has specifically been written for **researchers** and **higher degree research students** who want to become more efficient and confident in their use of Excel.
+
+This course assumes basic knowledge of Excel, including:
+
+* the general Office/Excel interface (menus, ribbons/toolbars, etc.)
+* workbooks and [worksheets](http://www.excel-easy.com/basics/worksheets.html)
+* [absolute and relative references](http://web.pdx.edu/~stipakb/CellRefs.htm), e.g. ```$A$1```, ```A1```.
+* simple [ranges](http://www.excel-easy.com/introduction/range.html), e.g. ```A1:B5```
+
+
+### What will be covered in the course?
+
 This course is structured as a series of modules.
 
 In modules 1 and 2 we'll import some daily weather data from the [Bureau of Meteorology](http://www.bom.gov.au/). We'll import it, sanity check it and then explore and chart the data. We'll cover:
@@ -56,12 +85,15 @@ Module 7 builds on modules 3, 4, 5 and 6. In this module we put it all together,
 
 Lastly, we present a section called "Where to next?", that offers suggestions for digging further into Excel and other tools that you may also find useful.
 
-This course assumes basic knowledge of Excel, including:
+### Caveats and Disclaimers
 
-* the general Office/Excel interface (menus, ribbons/toolbars, etc.)
-* workbooks and [worksheets](http://www.excel-easy.com/basics/worksheets.html)
-* [absolute and relative references](http://web.pdx.edu/~stipakb/CellRefs.htm), e.g. ```$A$1```, ```A1```.
-* simple [ranges](http://www.excel-easy.com/introduction/range.html), e.g. ```A1:B5```
+* Level of knowledge in the class will be varied
+* Excel versions may vary
+* Menus and commands for Mac vs PC can be different
+* Greater or lesser relevance to your specific research questions
+* Completing the survey at the end: The price of admission!
+
+### A note about Excel versions
 
 The course was compiled using Microsoft Excel 2011 for Mac. There are many versions of Excel in use. Some features used here may not be available in all versions. Also, the way in which they are accessed may differ from version to version. If the instructions don't make sense for your version of Excel, try a web search with some keywords and your Excel version, e.g. [Excel 2010 pivot tables](https://www.google.com.au/?q=Excel+2010+pivot+tables). Generally, the concepts covered will be applicable even if the steps are slightly different for your copy of Excel.
 

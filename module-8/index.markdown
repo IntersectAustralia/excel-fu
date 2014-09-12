@@ -3,6 +3,35 @@ layout: post
 title: Where to next? 
 ---
 
+### Evaluation Survey
+<div class="note">
+Please complete our <a href="http://svy.mk/18c8dHa">course evaluation survey</a>. Your feedback helps us to make <b>Excel Fu: Excel for Researchers</b> even better.
+</div>
+
+### Ask me anything / Show and Tell sessions (online)
+<div class="note">
+Join us online for an <b>Ask me anything / Show and Tell session</b>. These sessions are a great opportunity to ask any Excel questions your might have, or to show us what you've done with your data after completing <b>Excel Fu</b>:
+
+<ul>
+  <li> <a href="http://intersect-excel-fu-hangout2.eventbrite.com.au">3 October 2014</a> </li>
+  <li> <a href="http://intersect-excel-fu-hangout3.eventbrite.com.au">17 October 2014</a> </li>
+
+</ul>
+</div>
+
+
+### Join the Mailing List
+<div class="note">
+  Find out about upcoming courses by <a href="http://bit.ly/1aZvRqw">signing up to Intersect's courses mailing list</a>.
+</div>
+
+### More cool stuff
+
+<div class="note">
+  See below for ways you can do more with Excel. And some other handy tools and techniques you might like to
+  explore...
+</div>
+
 ## Microsoft Excel Analysis ToolPak
 
 The [Microsoft Excel Analysis ToolPak](http://office.microsoft.com/en-au/excel-help/use-the-analysis-toolpak-to-perform-complex-data-analysis-HP010342762.aspx) is an addon you can load in Excel that allows you perform more complex analysis in Excel. 
