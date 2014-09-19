@@ -291,8 +291,8 @@ We know the records are in sequence, with the first one referring to the 1 Janua
 
 1. Next let's give the columns some sensible names, by setting:
   * `A1` to be "Date"
-  * `A2` to be "Sunrise"
-  * `A3` to be "Sunset"
+  * `B1` to be "Sunrise"
+  * `C1` to be "Sunset"
 
     You may wish to bold this header row or shade it to make it stand out.
 
