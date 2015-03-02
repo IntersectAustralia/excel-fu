@@ -11,8 +11,8 @@ Learning Objective: To explore and visualise two datasets together.
 In this module we combine our average daily maximum temperature data with our sunrise and sunset data to explore the phenomenon of seasonal lag in coastal Sydney.
 
 ## Preparation
-1. Open the "BOMWeatherData.xlsx" file you worked with in module 1 and 2 in **Microsoft Excel**.
-1. Open the "GASunriseSunsetData.xlsx" file you worked with in module 3 and 4 in **Microsoft Excel**.
+1. Open the "BOMWeatherData.xlsx" file you worked with in module 3 and 4 in **Microsoft Excel**.
+1. Open the "GASunriseSunsetData.xlsx" file you worked with in module 5 and 6 in **Microsoft Excel**.
 1. Open a new workbook in **Microsoft Excel** and save it as "SeasonalLag.xlsx".
 1. In the new "SeasonalLag.xlsx" file, rename the first worksheet to "Seasonal Lag"
 1. Remove any other (blank) worksheets in "SeasonalLag.xlsx".
