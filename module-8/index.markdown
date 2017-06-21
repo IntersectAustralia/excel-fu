@@ -19,11 +19,12 @@ Join us online for an <b>Ask me anything / Show and Tell session</b>. These sess
 </ul>
 </div>
 
-
+<!---
 ### Join the Mailing List
 <div class="note">
   Find out about upcoming courses by <a href="http://bit.ly/1aZvRqw">signing up to Intersect's courses mailing list</a>.
 </div>
+--->
 
 ### More cool stuff
 
