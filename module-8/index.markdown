@@ -7,7 +7,7 @@ title: Where to next?
 <div class="note">
 Please complete our <a href="http://svy.mk/18c8dHa">course evaluation survey</a>. Your feedback helps us to make <b>Excel Fu: Excel for Researchers</b> even better.
 </div>
-
+<!---
 ### Ask me anything / Show and Tell sessions (online)
 <div class="note">
 Join us online for an <b>Ask me anything / Show and Tell session</b>. These sessions are a great opportunity to ask any Excel questions your might have, or to show us what you've done with your data after completing <b>Excel Fu</b>:
@@ -18,7 +18,7 @@ Join us online for an <b>Ask me anything / Show and Tell session</b>. These sess
 
 </ul>
 </div>
-
+--->
 <!---
 ### Join the Mailing List
 <div class="note">
