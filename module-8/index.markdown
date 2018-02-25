@@ -5,7 +5,7 @@ title: Where to next?
 
 ### Evaluation Survey
 <div class="note">
-Please complete our <a href="http://svy.mk/18c8dHa">course evaluation survey</a>. Your feedback helps us to make <b>Excel Fu: Excel for Researchers</b> even better.
+Please complete our <a href="http://goo.gl/d7bwux">course evaluation survey</a>. Your feedback helps us to make <b>Excel Fu: Excel for Researchers</b> even better.
 </div>
 <!---
 ### Ask me anything / Show and Tell sessions (online)
